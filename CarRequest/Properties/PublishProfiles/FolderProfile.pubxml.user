@@ -1,0 +1,926 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- https://go.microsoft.com/fwlink/?LinkID=208121. -->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\CarRequest_Web</_PublishTargetUrl>
+    <History>True|2025-06-29T07:28:13.2355563Z||;True|2025-06-28T11:10:45.4329008+07:00||;True|2025-06-28T11:09:14.9228397+07:00||;True|2025-06-28T11:05:09.1484033+07:00||;True|2025-06-28T10:38:42.5330598+07:00||;True|2025-06-27T21:22:18.2792264+07:00||;True|2025-06-27T21:18:41.2399058+07:00||;True|2025-06-27T21:16:22.9010242+07:00||;True|2025-06-27T20:55:17.0272554+07:00||;True|2025-06-27T15:41:52.3282742+07:00||;True|2025-06-27T15:38:37.5499727+07:00||;False|2025-06-27T15:38:24.8192923+07:00||;True|2025-06-27T15:29:10.3096199+07:00||;True|2025-06-27T15:24:54.2995999+07:00||;True|2025-06-27T15:23:07.3193491+07:00||;True|2025-06-27T15:12:10.6075586+07:00||;True|2025-06-27T13:20:06.8355602+07:00||;True|2025-06-27T13:18:01.1445537+07:00||;True|2025-06-27T13:17:03.2711010+07:00||;True|2025-06-27T13:14:15.0014014+07:00||;True|2025-06-27T13:12:17.9146571+07:00||;True|2025-06-27T13:10:51.3103500+07:00||;True|2025-06-27T13:04:43.7257151+07:00||;True|2025-06-27T13:00:01.9245210+07:00||;True|2025-06-27T12:48:58.6139632+07:00||;True|2025-06-27T09:32:02.6422977+07:00||;True|2025-06-27T09:31:16.4773862+07:00||;True|2025-06-27T09:29:54.4248534+07:00||;True|2025-06-27T08:58:06.4236114+07:00||;True|2025-06-27T08:34:14.2450810+07:00||;True|2025-06-27T08:24:07.4929127+07:00||;True|2025-06-27T07:52:47.8166011+07:00||;True|2025-06-26T13:11:42.6667787+07:00||;True|2025-06-26T09:19:04.1147612+07:00||;True|2025-06-26T07:45:18.7042007+07:00||;True|2025-06-26T07:44:57.9199236+07:00||;True|2025-06-26T07:42:15.2961711+07:00||;True|2025-06-26T07:35:47.9769260+07:00||;True|2025-06-26T07:34:46.5465847+07:00||;True|2025-06-25T08:16:58.0996700+07:00||;True|2025-06-25T08:16:21.5453144+07:00||;True|2025-06-25T08:15:41.5600441+07:00||;True|2025-06-25T08:15:22.3097994+07:00||;True|2025-06-25T08:13:38.1777822+07:00||;True|2025-06-25T07:55:37.4741718+07:00||;True|2025-06-25T07:52:57.7554803+07:00||;True|2025-06-24T14:56:53.9270723+07:00||;True|2025-06-24T14:55:12.6114986+07:00||;True|2025-06-24T14:54:26.1800413+07:00||;True|2025-06-24T14:53:03.8689982+07:00||;True|2025-06-24T08:30:05.8372909+07:00||;True|2025-06-24T08:28:10.7238222+07:00||;True|2025-06-24T08:24:42.8517763+07:00||;True|2025-06-24T08:22:29.3500726+07:00||;True|2025-06-24T07:50:46.6373700+07:00||;True|2025-06-24T07:50:03.7168405+07:00||;True|2025-06-24T07:34:05.1049898+07:00||;True|2025-06-24T07:33:17.6479917+07:00||;True|2025-06-23T10:18:21.1538559+07:00||;True|2025-06-23T09:49:55.2848531+07:00||;True|2025-06-23T08:23:34.3671478+07:00||;True|2025-06-23T08:21:17.5251057+07:00||;True|2025-06-23T08:20:28.9415881+07:00||;True|2025-06-23T08:10:12.0807611+07:00||;True|2025-06-23T08:04:16.3475143+07:00||;True|2025-06-23T08:02:54.1179011+07:00||;True|2025-06-23T07:55:57.0365118+07:00||;True|2025-06-23T07:47:10.8891377+07:00||;True|2025-06-23T07:45:32.7054534+07:00||;True|2025-06-23T07:44:49.5278251+07:00||;True|2025-06-23T07:44:37.1274860+07:00||;True|2025-06-23T07:42:45.6237339+07:00||;True|2025-06-20T10:02:00.4264080+07:00||;True|2025-06-20T08:50:14.2503439+07:00||;True|2025-06-20T08:46:33.1795683+07:00||;True|2025-06-20T08:42:14.1374806+07:00||;True|2025-06-20T08:31:10.8184142+07:00||;True|2025-06-20T08:30:19.0011263+07:00||;True|2025-06-20T08:29:00.7239314+07:00||;True|2025-06-20T08:19:46.0968020+07:00||;True|2025-06-20T08:17:55.9049312+07:00||;True|2025-06-20T08:17:23.9867188+07:00||;True|2025-06-20T08:15:32.4746671+07:00||;True|2025-06-20T08:12:35.9148403+07:00||;True|2025-06-20T08:10:04.0052337+07:00||;True|2025-06-20T08:07:02.1792615+07:00||;True|2025-06-20T08:03:39.4035364+07:00||;True|2025-06-20T07:55:55.3890557+07:00||;True|2025-06-20T07:54:17.9255258+07:00||;True|2025-06-20T07:52:35.3157039+07:00||;True|2025-06-20T07:46:56.2779024+07:00||;True|2025-06-20T07:46:00.4954919+07:00||;True|2025-06-20T07:45:16.4652637+07:00||;True|2025-06-20T07:43:45.9074883+07:00||;True|2025-06-20T07:41:46.8131905+07:00||;True|2025-06-20T07:39:26.1293366+07:00||;True|2025-06-20T07:39:13.6468391+07:00||;True|2025-06-20T07:36:45.6248400+07:00||;True|2025-06-19T13:16:08.5271028+07:00||;True|2025-06-19T13:07:00.6742303+07:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>09/10/2013 16:29:20</publishTime>
+    </File>
+    <File Include="bin/BouncyCastle.Cryptography.dll">
+      <publishTime>05/22/2025 13:48:24</publishTime>
+    </File>
+    <File Include="bin/CarRequest.dll">
+      <publishTime>06/29/2025 14:34:47</publishTime>
+    </File>
+    <File Include="bin/CarRequest.pdb">
+      <publishTime>06/29/2025 14:34:47</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.FriendlyUrls.dll">
+      <publishTime>07/30/2013 16:57:30</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Web.Optimization.WebForms.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>03/06/2023 05:41:40</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.MSAjax.dll">
+      <publishTime>09/06/2013 11:20:12</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ScriptManager.WebForms.dll">
+      <publishTime>09/06/2013 11:20:22</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>04/11/2022 19:09:46</publishTime>
+    </File>
+    <File Include="bin/MimeKit.dll">
+      <publishTime>04/30/2025 04:28:26</publishTime>
+    </File>
+    <File Include="bin/MimeKit.pdb">
+      <publishTime>04/30/2025 04:28:26</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>03/08/2023 07:09:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>02/15/2022 12:38:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>02/15/2022 12:38:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>02/15/2022 12:21:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>02/15/2022 12:38:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>02/15/2022 12:38:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>02/15/2022 12:21:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>02/15/2022 12:33:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>02/15/2022 12:36:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>02/15/2022 12:38:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>02/15/2022 12:33:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>02/15/2022 12:33:26</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>02/15/2022 12:34:50</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>02/15/2022 12:21:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>10/05/2021 07:47:54</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>10/05/2021 07:49:46</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.CurrentVersions.targets">
+      <publishTime>02/15/2022 12:33:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>02/15/2022 12:21:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>02/15/2022 12:21:10</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Win32.Primitives.dll">
+      <publishTime>11/05/2016 18:55:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/05/2016 18:55:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Buffers.dll">
+      <publishTime>02/19/2020 17:05:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>10/20/2020 01:37:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/05/2016 18:55:48</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.DiagnosticSource.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/05/2016 18:55:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/05/2016 18:55:52</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Globalization.Calendars.dll">
+      <publishTime>11/05/2016 18:56:02</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.ZipFile.dll">
+      <publishTime>11/05/2016 18:56:04</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/05/2016 18:56:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Memory.dll">
+      <publishTime>02/19/2020 17:05:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Http.dll">
+      <publishTime>11/05/2016 18:56:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Net.Sockets.dll">
+      <publishTime>11/05/2016 18:56:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Numerics.Vectors.dll">
+      <publishTime>05/15/2018 20:29:44</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>10/20/2020 01:45:32</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>10/20/2020 01:46:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Runtime.InteropServices.RuntimeInformation.dll">
+      <publishTime>11/05/2016 18:57:00</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/05/2016 18:57:14</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/05/2016 18:57:08</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/05/2016 18:57:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/29/2018 22:39:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Threading.Tasks.Extensions.dll">
+      <publishTime>02/19/2020 17:05:18</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/05/2016 18:57:30</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/05/2016 18:57:36</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/05/2016 18:57:40</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/05/2016 18:57:34</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>02/15/2022 12:34:58</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>02/15/2022 12:34:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>02/15/2022 12:21:12</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>02/15/2022 12:38:42</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>02/15/2022 12:38:42</publishTime>
+    </File>
+    <File Include="bin/System.Buffers.dll">
+      <publishTime>03/20/2025 03:55:38</publishTime>
+    </File>
+    <File Include="bin/System.Formats.Asn1.dll">
+      <publishTime>04/16/2025 01:04:34</publishTime>
+    </File>
+    <File Include="bin/System.Memory.dll">
+      <publishTime>04/04/2025 06:00:54</publishTime>
+    </File>
+    <File Include="bin/System.Numerics.Vectors.dll">
+      <publishTime>03/20/2025 03:55:42</publishTime>
+    </File>
+    <File Include="bin/System.Runtime.CompilerServices.Unsafe.dll">
+      <publishTime>04/04/2025 06:00:52</publishTime>
+    </File>
+    <File Include="bin/System.Threading.Tasks.Extensions.dll">
+      <publishTime>04/04/2025 06:00:52</publishTime>
+    </File>
+    <File Include="bin/System.ValueTuple.dll">
+      <publishTime>05/23/2025 17:54:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>02/11/2014 15:26:04</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>01/23/2014 13:57:34</publishTime>
+    </File>
+    <File Include="Bundle.config">
+      <publishTime>05/30/2025 07:45:11</publishTime>
+    </File>
+    <File Include="CarRequest.ico">
+      <publishTime>06/16/2025 08:20:02</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.min.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.rtl.min.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.min.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.rtl.min.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.css.map">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.min.css">
+      <publishTime>06/07/2025 14:33:11</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.min.css.map">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.css">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.css.map">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.min.css">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap-utilities.rtl.min.css.map">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.css">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.css.map">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.min.css">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/bootstrap.rtl.min.css.map">
+      <publishTime>06/07/2025 14:33:10</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/30/2025 07:45:11</publishTime>
+    </File>
+    <File Include="DangKy.aspx">
+      <publishTime>06/27/2025 08:24:04</publishTime>
+    </File>
+    <File Include="DangNhap.aspx">
+      <publishTime>06/26/2025 07:32:50</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>06/16/2025 08:20:02</publishTime>
+    </File>
+    <File Include="Function_Form/PhieuYeuCauXe.aspx">
+      <publishTime>06/03/2025 14:23:44</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/30/2025 07:45:11</publishTime>
+    </File>
+    <File Include="Handler/CheckSession.ashx">
+      <publishTime>06/13/2025 09:31:11</publishTime>
+    </File>
+    <File Include="Handler_ashx/CheckSession.ashx">
+      <publishTime>06/13/2025 09:31:11</publishTime>
+    </File>
+    <File Include="MucLuc/BaoLoi.aspx">
+      <publishTime>06/25/2025 07:55:34</publishTime>
+    </File>
+    <File Include="MucLuc/ChiTietPhanQuyen.aspx">
+      <publishTime>06/29/2025 02:04:19</publishTime>
+    </File>
+    <File Include="MucLuc/DangKyXe.aspx">
+      <publishTime>06/27/2025 22:30:57</publishTime>
+    </File>
+    <File Include="MucLuc/LichSuDangKy.aspx">
+      <publishTime>06/25/2025 07:51:22</publishTime>
+    </File>
+    <File Include="MucLuc/PheDuyetDon.aspx">
+      <publishTime>06/26/2025 13:48:35</publishTime>
+    </File>
+    <File Include="MucLuc/PhieuYeuCauXe.aspx">
+      <publishTime>06/07/2025 18:29:44</publishTime>
+    </File>
+    <File Include="MucLuc/PopUp/ChiTietPhanQuyen.aspx">
+      <publishTime>06/27/2025 13:10:48</publishTime>
+    </File>
+    <File Include="MucLuc/QuanLyTaiKhoan.aspx">
+      <publishTime>06/28/2025 11:25:06</publishTime>
+    </File>
+    <File Include="MucLuc/ThongBao.aspx">
+      <publishTime>06/26/2025 09:47:24</publishTime>
+    </File>
+    <File Include="MucLuc/TrangChu.aspx">
+      <publishTime>06/25/2025 07:48:06</publishTime>
+    </File>
+    <File Include="Picture_Resources/ah.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Avatar/avatar_default.jpg">
+      <publishTime>06/24/2025 12:42:57</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround.gif">
+      <publishTime>06/12/2025 17:53:52</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_1.gif">
+      <publishTime>06/13/2025 08:39:01</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_1.jpg">
+      <publishTime>06/13/2025 08:42:20</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_10.jpg">
+      <publishTime>06/13/2025 07:41:24</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_2.jpg">
+      <publishTime>06/13/2025 08:38:53</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_3.jpg">
+      <publishTime>06/13/2025 08:38:53</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_4.jpg">
+      <publishTime>06/13/2025 08:38:53</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_5.jpg">
+      <publishTime>06/13/2025 08:38:53</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_6.jpg">
+      <publishTime>06/13/2025 08:38:53</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_7.jpg">
+      <publishTime>06/13/2025 08:38:53</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_8.jpg">
+      <publishTime>06/13/2025 08:38:53</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround/BackGround_9.jpg">
+      <publishTime>06/13/2025 07:41:24</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround_1.gif">
+      <publishTime>06/12/2025 18:01:31</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround_1.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround_2.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround_3.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround_4.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/BackGround_5.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/bad_smelly.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/beat_brick.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/beat_plaster.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/beat_shot.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/bg1.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/bg2.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/bg3.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/BG_Image.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/BG_Image.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/big_smile.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/burn_joss_stick.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/byebye.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/canny.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/confuse.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/cry.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap.gif">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_01.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_02.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_03.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_04.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_05.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_06.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_07.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/DangNhap_08.jpg">
+      <publishTime>06/17/2025 09:47:28</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login.gif">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_01.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_02.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_03.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_04.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_05.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_07.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_08.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/DangNhap/Login_09.jpg">
+      <publishTime>06/17/2025 09:38:27</publishTime>
+    </File>
+    <File Include="Picture_Resources/doubt.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/dribble.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/embarrassed.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/extreme_sexy_girl.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/ah.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/bad_smelly.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/beat_brick.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/beat_plaster.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/beat_shot.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/big_smile.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/burn_joss_stick.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/byebye.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/canny.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/confuse.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/cry.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/doubt.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/dribble.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/embarrassed.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/extreme_sexy_girl.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/hungry.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/oh.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/pudency.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/run.gif">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/sad.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/sexy_girl.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/shame.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/smile.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/still_dreaming.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/sure.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/surrender.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/sweat.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/tire.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/too_sad.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/waaaht.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Fun_Voz/what.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Gif/run_car.gif">
+      <publishTime>06/25/2025 08:26:54</publishTime>
+    </File>
+    <File Include="Picture_Resources/Gif/run_dog.gif">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Gif/run_man.gif">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/hamster.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/hungry.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/Icon/CarRequest.ico">
+      <publishTime>06/18/2025 08:12:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/img_arcadyan.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/logo_hpu2.jpg">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/oh.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/pudency.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/run.gif">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/run_dog.gif">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/run_man.gif">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/sad.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/sexy_girl.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/shame.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/smile.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/still_dreaming.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/sure.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/surrender.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/sweat.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/tire.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/too_sad.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/BackGround_01.jpg">
+      <publishTime>06/17/2025 09:38:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/BackGround_02.jpg">
+      <publishTime>06/17/2025 09:38:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/BackGround_03.jpg">
+      <publishTime>06/17/2025 09:38:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/BackGround_04.jpg">
+      <publishTime>06/17/2025 09:38:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/BackGround_05.jpg">
+      <publishTime>06/17/2025 09:38:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/BackGround_06.jpg">
+      <publishTime>06/17/2025 09:38:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/TrangChu_01.jpg">
+      <publishTime>06/17/2025 09:47:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/TrangChu_02.jpg">
+      <publishTime>06/17/2025 09:47:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/TrangChu_03.jpg">
+      <publishTime>06/17/2025 09:47:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/TrangChu_04.jpg">
+      <publishTime>06/17/2025 09:47:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/TrangChu_05.jpg">
+      <publishTime>06/17/2025 09:47:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/TrangChu/TrangChu_06.jpg">
+      <publishTime>06/17/2025 09:47:48</publishTime>
+    </File>
+    <File Include="Picture_Resources/waaaht.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Picture_Resources/what.png">
+      <publishTime>05/30/2025 08:00:03</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.js">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.js.map">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.min.js">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.esm.min.js.map">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>06/07/2025 14:33:09</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.0.js">
+      <publishTime>05/30/2025 07:45:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.0.min.js">
+      <publishTime>05/30/2025 07:45:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.0.min.map">
+      <publishTime>05/30/2025 07:45:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.0.slim.js">
+      <publishTime>05/30/2025 07:45:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.0.slim.min.js">
+      <publishTime>05/30/2025 07:45:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.0.slim.min.map">
+      <publishTime>05/30/2025 07:45:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.1.js">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.1.min.js">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.1.min.map">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.1.slim.js">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.1.slim.min.js">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.7.1.slim.min.map">
+      <publishTime>06/07/2025 14:33:12</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>05/30/2025 07:45:15</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/DetailsView.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Focus.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/GridView.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/Menu.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MenuStandards.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjax.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxApplicationServices.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxComponentModel.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxCore.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxGlobalization.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxHistory.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxNetwork.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxSerialization.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxTimer.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebForms.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/MSAjax/MicrosoftAjaxWebServices.js">
+      <publishTime>05/30/2025 07:45:17</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/SmartNav.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/TreeView.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebForms.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebParts.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Scripts/WebForms/WebUIValidation.js">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Site.Master">
+      <publishTime>06/28/2025 22:48:26</publishTime>
+    </File>
+    <File Include="Site.Mobile.Master">
+      <publishTime>05/30/2025 07:46:47</publishTime>
+    </File>
+    <File Include="TrangChu.aspx">
+      <publishTime>06/23/2025 10:08:02</publishTime>
+    </File>
+    <File Include="ViewSwitcher.ascx">
+      <publishTime>05/30/2025 07:45:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/27/2025 20:55:15</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

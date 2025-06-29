@@ -1,0 +1,707 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="CarRequest.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <title><%:Page.Title%> - Car Request</title>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <!-- Thêm CSS Bootstrap -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.3.5/dist/css/coreui.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@4.3.5/dist/js/coreui.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/Picture_Resources/Icon/CarRequest.ico" rel="icon" type="image/x-icon" />
+    <asp:ContentPlaceHolder id="MainHead" runat="server"> </asp:ContentPlaceHolder>
+
+    <style>
+        /* ======================
+           RESET + CƠ BẢN
+        ====================== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        @font-face {
+            font-family: 'Doris';
+            src: url('/fonts/Doris-Regular.woff2') format('woff2'),
+                 url('/fonts/Doris-Regular.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        body {
+            /*font-family: 'Poppins', 'Times New Roman', serif;*/
+            font-family: 'Doris', serif;
+            font-style: normal;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ======================
+           MAIN WRAPPER + CONTAINER
+        ====================== */
+        .container-fluid {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0;
+        }
+
+        .main-wrapper {
+            margin-left: 220px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .sidebar-hidden .main-wrapper {
+            margin-left: 0;
+        }
+
+        .mainBody {
+            height: calc(100vh - 50px - 40px);
+            overflow-y: auto;
+            width: auto;
+            z-index: 2;
+        }
+
+        .row_top {
+            /*height: 5vh;*/
+            height: 50px;
+            flex-shrink: 0;
+            z-index: 1;
+        }
+
+        .row_bottom {
+            height: 5vh;
+        }
+
+        /* ======================
+           HEADER
+        ====================== */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: linear-gradient(to right, #60a5fa, #818cf8);
+            color: white;
+            padding: 4px 20px;
+        }
+
+        .menu-toggle {
+            background: none;
+            border: none;
+            color: #CD5555;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .menu-toggle.btn-link {
+            text-decoration: none;
+        }
+
+        #user_name {
+            flex: 1;
+            text-align: center;
+            font-size: 28px;
+            font-weight: 700;
+            color: #ffffff;
+            font-family: 'Doris', sans-serif;
+        }
+
+        /* ======================
+           SIDEBAR
+        ====================== */
+        .c-sidebar {
+            width: 220px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            background-color: #f1f5f9;
+            color: #1f2937;
+            z-index: 1000;
+            overflow-y: auto;
+            /*font-family: 'Poppins', sans-serif;*/
+            font-family: 'Times New Roman', Times, serif;
+            box-shadow: 2px 0 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .c-sidebar:hover {
+            background: linear-gradient(to bottom, #a8edea, #fed6e3, #d1c4e9, #c5e1a5, #fff59d, #ffe082);
+            background-size: 400% 400%;
+            animation: gradientBG 8s ease infinite;
+        }
+
+        .c-sidebar:hover .c-sidebar-nav-title {
+            color: #4f46e5;
+            text-shadow: 0 0 4px rgba(79, 70, 229, 0.5);
+            transition: color 0.5s ease, text-shadow 0.5s ease;
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .c-sidebar-nav {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .c-sidebar-nav-link {
+            display: flex;
+            align-items: center;
+            padding: 12px 20px;
+            color: #374151;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+        }
+
+        .c-sidebar-nav-link:hover,
+        .c-sidebar-nav-link:focus {
+            background-color: #e0e7ff;
+            color: #4f46e5;
+            transform: translateX(4px);
+            box-shadow: 0 0 6px rgba(79, 70, 229, 0.25);
+            text-decoration: none;
+        }
+
+        .c-sidebar-nav-icon {
+            margin-right: 10px;
+            color: #6b7280;
+            transition: color 0.3s ease;
+        }
+
+        .c-sidebar-nav-link:hover .c-sidebar-nav-icon {
+            color: #4f46e5;
+            text-decoration: none;
+        }
+
+        .c-sidebar-nav-title {
+            padding: 10px 20px;
+            font-size: 15px;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: #CC9933;
+            border-top: 1px solid #cbd5e1;
+            margin-top: 5px;
+        }
+
+        #title_ChucNangChinh {
+            border-top: hidden;
+            margin-top: 0;
+        }
+
+        .c-sidebar-nav-link.active {
+            background-color: #e0e7ff;
+            color: #4f46e5;
+            font-weight: bold;
+            box-shadow: inset 4px 0 0 0 #4f46e5;
+            animation: glowActiveTab 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes glowActiveTab {
+            0% {
+                box-shadow: inset 4px 0 0 0 #4f46e5, 0 0 5px rgba(79, 70, 229, 0.3);
+            }
+            100% {
+                box-shadow: inset 4px 0 0 0 #4f46e5, 0 0 15px rgba(79, 70, 229, 0.8);
+            }
+        }
+
+        .c-sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .c-sidebar::-webkit-scrollbar-track {
+            background: #f3f4f6;
+        }
+
+        .c-sidebar::-webkit-scrollbar-thumb {
+            background-color: #cbd5e1;
+            border-radius: 3px;
+        }
+
+        .c-sidebar-brand {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            background-color: #f9fafb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .sidebar-username {
+            text-decoration: none;
+            color: #FF0000;
+            font-weight: bold;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .sidebar-username:hover {
+            text-decoration: none;
+            color: #FF0000;
+        }
+        /* ======================
+           AVATAR DROPDOWN
+        ====================== */
+        .dropdown {
+            position: relative;
+        }
+
+        .dropdown-toggle img {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+        }
+
+        .dropdown-toggle:hover img {
+            transform: scale(1.05);
+        }
+
+        .dropdown-menu {
+            background-color: #ecf0f1;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            min-width: 120px;
+            padding: 0;
+            z-index: 100;
+            overflow: hidden;
+        }
+
+        .dropdown-menu .dropdown-header {
+            background-color: #f8f9fa;
+            padding: 10px 15px;
+            font-weight: bold;
+            font-size: 14px;
+            color: #FF3333;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .dropdown-menu .dropdown-item {
+            display: flex;
+            align-items: center;
+            padding: 10px 15px;
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 14px;
+            transition: background-color 0.2s ease;
+        }
+
+        .dropdown-menu .dropdown-item:hover {
+            background-color: #CCFFFF;
+            color: #000;
+        }
+
+        .dropdown-menu .c-icon {
+            margin-right: 8px;
+        }
+
+        .dropdown-menu .text-dark {
+            color: #2c3e50;
+            text-decoration: none;
+        }
+
+        .dropdown-menu .text-dark:hover {
+            color: #000;
+            text-decoration: none;
+        }
+
+        #link_Logout {
+            text-decoration: none;
+            color: #3333FF;
+        }
+
+        #link_Logout:hover {
+            color: #3333FF;
+            text-decoration: none;
+        }
+
+        .avatar-glow {
+            position: relative;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .avatar-glow::before {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background: conic-gradient(
+                #4f46e5 0deg,
+                #818cf8 90deg,
+                #4f46e5 180deg,
+                #818cf8 270deg,
+                #4f46e5 360deg
+            );
+            animation: rotateBorder 1.5s linear infinite;
+            z-index: -1;
+        }
+
+        @keyframes rotateBorder {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* ======================
+           RUNNING FOOTER GIF
+        ====================== */
+        #run {
+            width: 100%;
+            overflow: hidden;
+            position: fixed;
+            bottom: 0;
+            background-color: white;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+
+        #run_car {
+            position: absolute;
+            white-space: nowrap;
+            top: 8px;
+            height: 100%;
+            margin-left: 0px;
+            animation: run 15s linear infinite;
+            z-index: 3;
+        }
+
+        #run_man {
+            position: absolute;
+            white-space: nowrap;
+            /*top: 3px;*/
+            height: 100%;
+            margin-left: 35px;
+            animation: run 15s linear infinite;
+            z-index: 2;
+        }
+
+        #run_dog {
+            position: absolute;
+            white-space: nowrap;
+            top: 4px;
+            height: 100%;
+            left: 60px;
+            animation: run 15s linear infinite;
+            z-index: 1;
+        }
+
+        @keyframes run {
+            from {
+                transform: translateX(100vw);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        /* Cấu hình footer trang chủ */
+        #footer {
+            /*position: fixed;*/
+            left: 0;
+            text-align: center;
+            background-color: #9999CC;
+            z-index: 1;
+        }
+
+        /* ======================
+           RESPONSIVE SIDEBAR
+        ====================== */
+        @media (max-width: 992px) {
+            #user_name {
+                font-size: 20px !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #user_name {
+                font-size: 16px !important;
+            }
+
+            .c-sidebar {
+                width: 60px;
+            }
+
+            .sidebar-username strong {
+                display: none;
+            }
+
+            .c-sidebar-nav-link {
+                justify-content: center;
+                padding: 12px 8px;
+            }
+
+            .c-sidebar-nav-link span,
+            .c-sidebar-nav-title {
+                display: none;
+            }
+
+            .main-wrapper {
+                margin-left: 60px;
+                transition: margin-left 0.3s ease;
+            }
+
+            .sidebar-hidden .main-wrapper {
+                margin-left: 0;
+            }
+        }
+
+        /* ======================
+           BUTTON HOVER
+        ====================== */
+        #btn_Menu:focus {
+            outline: none;
+            box-shadow: none;
+            transition: all 0.3s ease;
+            border-radius: 6px;
+            padding: 6px 12px;
+        }
+
+        #btn_Menu:hover {
+            outline: 2px solid #FF0000;
+            outline-offset: 0px;
+            color: #dc2626;
+            transform: rotate(5deg);
+            transition: transform 0.2s ease-in-out;
+            animation: pulseMenu 0.3s ease-in-out;
+            background-color: #fef9c3;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+
+        }
+        @keyframes pulseMenu {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.15); }
+            100% { transform: scale(1); }
+        }
+
+    </style>
+</head>
+<%--<body class="sidebar-hidden">--%>
+<body>
+    <form runat="server">
+        <%-- Phần SideBar --%>
+        <%--<div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show d-none" id="sidebar">--%>
+        <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show " id="sidebar">
+            <div class="c-sidebar-brand d-lg-down-none text-uppercase">
+                <a class="sidebar-username">
+                    <i class="fas fa-car-side mr-2"></i>
+                    <strong>
+                        <%--<asp:Label id="lbl_ShowUserName" runat="server" CssClass="username-highlight" ></asp:Label>--%>
+                        Car Request
+                    </strong>
+                </a>
+            </div>
+
+            <ul class="c-sidebar-nav">
+                <li class="c-sidebar-nav-title" id="title_ChucNangChinh"> CHỨC NĂNG CHÍNH </li>
+
+                <li id="li_TrangChu" runat="server" class="c-sidebar-nav-item">
+                    <a runat="server" class="c-sidebar-nav-link" href="~/MucLuc/TrangChu.aspx">
+                        <i class="fas fa-home c-sidebar-nav-icon"></i>
+                        <span> Trang chủ </span>
+                    </a>
+                </li>
+
+                <li id="li_DangKyXe" runat="server" class="c-sidebar-nav-item">
+                    <a runat="server" class="c-sidebar-nav-link" href="~/MucLuc/DangKyXe.aspx">
+                        <i class="fas fa-car c-sidebar-nav-icon"></i>
+                        <span> Đăng ký xe </span>
+                    </a>
+                </li>
+
+                <li id="li_PheDuyetDon" runat="server" class="c-sidebar-nav-item">
+                    <a runat="server" class="c-sidebar-nav-link" href="~/MucLuc/PheDuyetDon.aspx">
+                        <i class="fas fa-check-circle c-sidebar-nav-icon"></i>
+                        <span> Phê duyệt đơn </span>
+                    </a>
+                </li>
+
+                <li id="li_LichSuDangKy" runat="server" class="c-sidebar-nav-item">
+                    <a runat="server" class="c-sidebar-nav-link" href="~/MucLuc/LichSuDangKy.aspx">
+                        <i class="fas fa-history c-sidebar-nav-icon"></i>
+                        <span> Lịch sử đăng ký </span>
+                    </a>
+                </li>
+
+                <li class="c-sidebar-nav-title"> CẤU HÌNH </li>
+
+                <li class="c-sidebar-nav-item">
+                    <a runat="server" class="c-sidebar-nav-link" href="~/">
+                        <i class="fas fa-cogs c-sidebar-nav-icon"></i>
+                        <span> Cài đặt </span>
+                    </a>
+                </li>
+
+                <li id="li_QuanLy" runat="server" class="c-sidebar-nav-title"> QUẢN LÝ </li>
+
+                <li id="li_QuanLyTaiKhoan" runat="server" class="c-sidebar-nav-item">
+                    <a runat="server" class="c-sidebar-nav-link" href="~/MucLuc/QuanLyTaiKhoan.aspx">
+                        <i class="fas fa-user c-sidebar-nav-icon"></i>
+                        <span> Quản lý tài khoản </span>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <%-- Phần nội dung chính ngoài SideBar --%>
+        <div class="container-fluid d-flex flex-column">
+            <!-- Top -->
+            <div id="full_main_body" class="main-wrapper">
+                <div class="row_top">
+                    <header class="d-flex align-items-center justify-content-between px-3">
+                        <!-- Nút mở sidebar -->
+                        <button id="btn_Menu" type="button" class="menu-toggle btn btn-link text-danger">&#9776;</button>
+
+                        <!-- Tên website -->
+                        <%--<div id="web_name" class="flex-grow-1 text-center" 
+                             style="color: #FFFFFF; font-weight: 700; font-size: 30px; font-family: 'Poppins', sans-serif; font-weight: bold; text-transform: uppercase;">
+                            <i class="fas fa-car-side mr-2"></i>
+                            <strong>Car Request</strong>
+                        </div>--%>
+                        <div id="user_name" class="flex-grow-1 text-center" >
+                            <%--<i class="fas fa-car-side mr-2"></i>--%>
+                            <strong>
+                                <asp:Label id="lbl_ShowUserName" runat="server" CssClass="username-highlight" ></asp:Label>
+                            </strong>
+                        </div>
+
+                        <!-- Avatar + Dropdown -->
+                        <div class="dropdown">
+                            <a href="#" class="d-flex align-items-center dropdown-toggle" id="avatarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <%--<img src="https://i.pravatar.cc/36" alt="Avatar" class="avatar-glow rounded-circle">--%>
+                                <asp:Image id="img_Avatar" runat="server" CssClass="avatar-glow rounded-circle"/>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right pt-0" aria-labelledby="avatarDropdown">
+                                <%--<div class="dropdown-header bg-light py-2">
+                                    <strong>
+                                        <asp:Label id="lbl_ShowUserName" runat="server" CssClass="username-highlight"></asp:Label>
+                                    </strong>
+                                </div>--%>
+
+                                <%--<a class="dropdown-item" href="#">
+                                    <div class="c-icon mr-2 d-inline-block">
+                                        <i class="fas fa-cog"></i>
+                                    </div>
+                                    Cài đặt
+                                </a>--%>
+
+                                <div class="dropdown-item d-flex align-items-center">
+                                    <div class="c-icon mr-2 d-inline-block">
+                                        <i class="fas fa-sign-out-alt"></i>
+                                    </div>
+                                    <asp:LinkButton id="link_Logout" runat="server" OnClick="link_Logout_Click" CssClass="text-dark" >
+                                        Đăng xuất
+                                    </asp:LinkButton>
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                </div>
+
+                <!-- Body -->
+                <div class="row_body flex-grow-1">
+                    <asp:ScriptManager runat="server">
+                        <Scripts>
+                            <%--Framework Scripts--%>
+                            <asp:ScriptReference Name="MsAjaxBundle" />
+                            <asp:ScriptReference Name="jquery" />
+                            <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                            <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                            <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                            <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                            <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                            <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                            <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                            <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                            <asp:ScriptReference Name="WebFormsBundle" />
+                            <%--Site Scripts--%>
+                        </Scripts>
+                    </asp:ScriptManager>
+
+                    <div class="mainBody"> <!-- Lồng nội dung vào đây :)) -->
+                        <asp:ContentPlaceHolder id="MainContent" runat="server"></asp:ContentPlaceHolder>
+                    </div>
+                </div>
+
+                <!-- Bottom -->
+                <div class="row_bottom fixed-bottom">
+                    <div id="run">
+                        <span id="run_car">
+                            <asp:Image ImageUrl="~/Picture_Resources/Gif/run_car.gif" width="15%" runat="server" AlternateText="Lỗi ảnh"/>
+                            <span id="run_man">
+                                <asp:Image ImageUrl="~/Picture_Resources/Gif/run_man.gif" width="10%" runat="server" AlternateText="Lỗi ảnh"/>
+                                <span id="run_dog">
+                                    <asp:Image ImageUrl="~/Picture_Resources/Gif/run_dog.gif" width="18%" runat="server" AlternateText="Lỗi ảnh"/>
+                                </span>
+                            </span>
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+    <%--Site Scripts--%>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const sidebar = document.getElementById("sidebar");
+            const full_main_body = document.getElementById("full_main_body");
+
+            document.getElementById("btn_Menu").addEventListener("click", function () {
+                sidebar.classList.toggle("d-none");
+                document.body.classList.toggle("sidebar-hidden");
+            });
+        });
+    </script>
+
+</body>
+</html>
+
